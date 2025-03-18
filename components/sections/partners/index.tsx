@@ -30,8 +30,16 @@ export default function Partners() {
           >
             <CarouselContent className="-mx-40">
               {PARTNERS_LOGOS.map((logo, index) => (
-                <CarouselItem className="-ml-1 basis-1/3 md:basis-1/5 lg:basis-1/7" key={index}>
-                  <Image src={logo} alt={`Partner Logo ${index + 1}`} className="w-44" />
+                <CarouselItem
+                  className="-ml-1 basis-1/3 md:basis-1/5 lg:basis-1/7"
+                  key={index}
+                >
+                  <Image
+                    src={logo}
+                    alt={`Partner Logo ${index + 1}`}
+                    className="w-44"
+                    priority
+                  />
                 </CarouselItem>
               ))}
             </CarouselContent>

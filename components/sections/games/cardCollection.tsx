@@ -23,6 +23,7 @@ export default function CardCollection() {
                 src={card.image}
                 alt={card.title}
                 className="w-60 md:w-80 lg:w-[400px] object-cover"
+                priority
               />
               <div className="absolute inset-0 flex flex-col justify-end p-2 text-white">
                 <h2 className="text-2xl font-bold">{card.title}</h2>

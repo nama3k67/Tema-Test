@@ -26,6 +26,7 @@ export default function Header() {
             width={500}
             height={500}
             className="absolute left-0 bottom-0 z-10 hidden lg:block"
+            priority
           />
         </div>
       </div>
