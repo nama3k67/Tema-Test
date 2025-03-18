@@ -1,5 +1,8 @@
+"use client";
+
 import { Menu } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { useState } from "react";
 
 import LocaleSwitcher from "@/components/shared/localeSwitcher";
 import { Button } from "@/components/ui/button";
@@ -16,10 +19,11 @@ import MobileNavbarItem from "./item";
 
 export default function MobileNavigation() {
   const t = useTranslations("navigation");
+  const [open, setOpen] = useState(false);
 
   return (
-    <Dialog>
-      <DialogTrigger>
+    <Dialog open={open} onOpenChange={setOpen}>
+      <DialogTrigger asChild>
         <Button
           asChild
           className="sm:hidden w-10 bg-transparent h-10"
@@ -40,7 +44,11 @@ export default function MobileNavigation() {
         <nav>
           <ul>
             {NAVBAR_ITEMS.map((item) => (
-              <MobileNavbarItem key={item.name} href={item.href}>
+              <MobileNavbarItem
+                key={item.name}
+                href={item.href}
+                setOpen={setOpen}
+              >
                 {t(item.name)}
               </MobileNavbarItem>
             ))}
