@@ -10,7 +10,7 @@ export default function Subscription() {
   const t = useTranslations("hero");
 
   return (
-    <div className="mt-8 md:mt-12 max-w-[560px]">
+    <div className="mt-8 md:mt-12 max-w-[560px] overflow-hidden">
       <p className="text-white text-center text-xs md:text-lg shadow-lg backdrop-blur-xs backdrop-brightness-90 lg:backdrop-blur-none xl:backdrop-blur-xs">
         {t("subscription_title")}
       </p>
