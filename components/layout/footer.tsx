@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 
+import { ROUTES } from "@/shared/constants";
 import { Button } from "../ui/button";
 
 import AddressIcon from "@/shared/images/icons/address.svg";
@@ -15,7 +16,7 @@ export default function Footer() {
   const t = useTranslations("footer");
 
   return (
-    <footer>
+    <footer id={ROUTES.CONTACT}>
       <div className="bg-[url(../shared/images/footer-bg.png)] bg-cover bg-center bg-no-repeat">
         <div className="container mx-auto px-4 py-8 sm:py-24">
           <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 gap-6">
