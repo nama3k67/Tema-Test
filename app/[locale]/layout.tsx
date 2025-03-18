@@ -24,8 +24,8 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Z Tech",
-  description: "Z Tech Application",
+  title: "E Tech Application",
+  description: "Etech is a game studio that creates games for mobile and web platforms. We are a team of designers, artists, animators and producers that create content for the biggest names in film and video games.",
 };
 
 export default async function RootLayout({
