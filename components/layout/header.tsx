@@ -5,7 +5,6 @@ import LocaleSwitcher from "../shared/localeSwitcher";
 import DesktopNavigation from "./navbar/desktop";
 import MobileNavigation from "./navbar/mobile";
 
-import ChildHeroBg from "@/shared/images/child-hero-bg.svg";
 import WitchHero from "@/shared/images/witch_hero.png";
 
 export default function Header() {
@@ -13,19 +12,11 @@ export default function Header() {
     <header>
       <div className="absolute inset-x-0 top-0 -z-10">
         <Image
-          src="/mobile-bg.svg"
-          alt="Background"
-          width={1920}
-          height={1080}
-          className="w-full h-full max-w-none lg:w-full sm:hidden"
-          priority
-        />
-        <Image
           src="/bg-hero.png"
           alt="Background"
           width={1920}
           height={1080}
-          className="relative hidden sm:block w-full h-screen max-w-none object-cover"
+          className="relative w-full h-[85vh] lg:h-[90vh] xl:h-full max-w-none object-cover"
           priority
         />
         <div className="relative">
@@ -34,14 +25,7 @@ export default function Header() {
             alt="Witch Hero"
             width={500}
             height={500}
-            className="absolute left-1/6 sm:lef bottom-0 z-10"
-          />
-          <Image
-            src={ChildHeroBg}
-            alt="Hero Background"
-            layout="fill"
-            objectPosition="top"
-            className="absolute top-0 left-0 z-0"
+            className="absolute left-0 bottom-0 z-10 hidden lg:block"
           />
         </div>
       </div>
