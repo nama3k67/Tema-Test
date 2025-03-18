@@ -7,12 +7,7 @@
 
 ### UI Components and Styling
 - [Tailwind CSS](https://tailwindcss.com/) (v4) - Utility-first CSS framework
-- [Radix UI](https://www.radix-ui.com/) - Unstyled, accessible component library
-  - Dialog, Select, and Slot components
-- [Embla Carousel](https://www.embla-carousel.com/) - Carousel/slider component
-- [Lucide React](https://lucide.dev/) - Icon library
-- [class-variance-authority](https://cva.style/docs) - For creating variant components
-- [clsx](https://github.com/lukeed/clsx) & [tailwind-merge](https://github.com/dcastil/tailwind-merge) - For conditional class naming
+- [Shadcn](https://ui.shadcn.com/) - Unstyled, accessible component library
 
 ### Internationalization
 - [next-intl](https://next-intl-docs.vercel.app/) (v4.0.2) - Internationalization library for Next.js
